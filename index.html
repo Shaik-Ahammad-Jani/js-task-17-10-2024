@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string methods</h1>
+    <img src="./image.png" alt="" width="80%">
+    <img src="./image copy.png" alt="" width="80%">
+    <img src="./image copy 2.png" alt="" width="80%">
+    <img src="./Screenshot 2024-10-23 143008.png" alt="" width="80%">
+
+
+
+
+
+    <script>
+
+
+        console.log("string methods :");
+        console.log("includes method :");
+        console.log("example1 : ")
+        let s="shaik jhony"
+        let s1="jan"
+        console.log(s);
+        console.log(s1);
+        console.log(s.includes(s1),"includes method prints the whether it is used to check the substring or not")
+        console.log("");
+        console.log("example2 : ");
+        let n="sample string";
+        let n1="sample";
+        console.log(n);
+        console.log(n1);
+        console.log(n.includes(n1),"includes method prints the whether it is used to check the substring or not")
+        console.log("");
+        console.log("slice method : ");
+        console.log("example 1 :");
+        let ex="Shaik Ahammad Jani";
+        console.log(ex);
+        console.log(ex.slice(1,),`print the number from ${(1)} till last index`);
+        console.log(ex.slice(0,9),`print the number from ${(0,9)} till index 9`);
+        console.log(ex.slice(-1,2),`print the number from ${(-11)} this does not print anything because slice method checks the startIndx <= EndInd and it should be same direction`);
+        console.log("");
+        console.log("example 2 :");
+        let ex1="name is jhony";
+        console.log(ex1);
+        console.log(ex1.slice(5),`this will print numbers from index 5 to till last index`);
+        console.log(ex1.slice(-5,-1),`this will print index -5 to -1 index`);
+        console.log(ex.slice(-1,2),`print the number from ${(-11)} this does not print anything because slice method checks the startIndx <= EndInd and it should be same direction`);
+        console.log("");
+        console.log("split method : ");
+        console.log("");
+        let a="jh@ny shaik";
+        console.log(a);
+        console.log(a.split(''),`this will print each charecter sepeated by single quote and comma`);
+        console.log(a.split(" "),`this will print each word seperated by comma`);
+        console.log(a.split("@"),"this will delete the @ char which is present in given string")
+        console.log("");
+        console.log("join method :");
+        let joi="_shaik_ah@mm@d_j@ni";
+        console.log(joi);
+        console.log(joi.split("_"),`split the string with _ which is present in given string`);
+        console.log(joi.split("_").join(""),`join the string with seperator`);
+        console.log(joi.split("@"),`split the string with @ which is present in given string`);
+        console.log(joi.split("@").join("").split("_").join(""),`join the string with seperator`);
+        console.log(joi.split("@").join("").split("_").join(""),`(the original sring become after applying split and join methods)`);
+        console.log("");
+        console.log("examples of slipt methos :");
+        console.log("example 1 :");
+        let example1="shaik jani";
+        console.log(example1)
+        console.log(example1.split(""));
+        console.log(example1.split(" ").join("_"),`join the string by using join method (_)`);
+
+        console.log("");
+
+        console.log("example 2 :");
+        let example2 = "@shaik@jani";
+        console.log(example2);
+        console.log(example2.split("@"));
+        console.log(example2.split("@").join(" "),`it is the output string after applying split and join methods on original string`);
+
+        console.log("");
+        console.log("example3 :");
+        let example3 = "@jani@jhony@jony";
+        console.log(example3);
+        console.log(example3.split("@"))
+        console.log(example3.split("@").join(" "),`it is the output string after applying split and join methods on original string`);
+
+        console.log("");
+        console.log("example4 :");
+        let example4="@shaik_ahammad ^ jani";
+        console.log(example4);
+        let l=example4.split("@")
+        console.log(l.join(" ").split("_").join(" ").split("^").join(""),`(  this is a updated string after split and join methods)`);
+
+        // console.log(l.join(" "),`join the string by using space and remove @`);
+        // let l1=l.split("_")
+        // console.log(l1)
+        // console.log(l1.join(" "),`join the string by using space and remove _`)
+        // let l2=l1.split("^")
+        // console.log(l2)
+        // console.log(example4.split("^").join(" "),`join the string by using space and remove ^`)
+
+        console.log("")
+        console.log("example 5 : ")
+        let friends="jani@omesh_tirumala*syam#naveen";
+        console.log(friends)
+        console.log(friends.split("@").join(" ").split("_").join(" ").split("*").join(" ").split("#").join(" "),`(  this is a updated string after split and join methods)`);
+        console.log("")
+        console.log("example6 : ");
+        let example6="ja@niIII"
+        console.log(example6)
+        console.log(example6.split("@").join('').split("I").join(""),`(  this is a updated string after split and join methods)`);
+
+        console.log("");
+        console.log("example7 : ");
+        let example7="hi this is exaple7";
+        console.log(example7);
+        console.log(example7.split(""));
+        console.log(example7.split(" "))
+        console.log(example7.split(" ").join("_"),`this is updated string`)
+         
+        console.log("");
+        console.log("example8 :");
+        let example8="hi@this#is-a_exaple8"
+        console.log(example8);
+        console.log(example8.split("@").join(" ").split("#").join(" ").split("-").join(" ").split("_").join(" "),`(this is a updated string after applying split and join methods)`);
+
+        console.log("");
+        console.log("example 9 :");
+        let example9= "e#ample";
+        console.log(example9);
+        console.log(example9.split("#").join("x"),`(this is updated string)`);
+
+        console.log("");
+        console.log("example10 :");
+        let example10="my_name@is&jhony";
+        console.log(example10);
+        console.log(example10.split("_").join(" ").split("@").join(" ").split("&").join(" "),`(this is a updated string after applying split and join methods)`)
+
+
+
+    
+
+    </script>
+</body>
+</html>
